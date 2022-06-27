@@ -1,0 +1,17 @@
+<script>
+        var audio = new Audio("HE.mp3");
+        function imagefun() {
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("DUMB2.png")) {
+                Image_Id.src = "DUMB.png";
+            }
+            else {
+                Image_Id.src = "DUMB2.png";
+                                  audio.play();
+            }
+        }
+
+    </script>
+    <div>
+    	<img src="DUMB.png" id="getImage" onclick="imagefun()" width="500" height="700">
+    </div>
